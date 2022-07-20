@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>877</width>
-    <height>603</height>
+    <height>735</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -103,6 +103,31 @@
         <string>Насторойки для исходных файлов:</string>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Выбрать разделитель для исходных файлов:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_12">
+          <item>
+           <widget class="QComboBox" name="inf_sep_cb">
+            <property name="editable">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QToolButton" name="inf_sep_tb">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
         <item>
          <widget class="QLabel" name="label_3">
           <property name="text">
@@ -207,19 +232,23 @@
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_7">
         <item>
-         <widget class="QLabel" name="label_7">
+         <widget class="QLabel" name="label_2">
           <property name="text">
-           <string>Выбрать столбцы с геометрией (по умолчанию LON и LAT):</string>
+           <string>Выбрать разделитель для файлов GPS: </string>
           </property>
          </widget>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <layout class="QHBoxLayout" name="horizontalLayout_13">
           <item>
-           <widget class="QComboBox" name="gps_g_cb"/>
+           <widget class="QComboBox" name="gps_sep_cb">
+            <property name="editable">
+             <bool>false</bool>
+            </property>
+           </widget>
           </item>
           <item>
-           <widget class="QToolButton" name="gps_g_tb">
+           <widget class="QToolButton" name="gps_sep_tb">
             <property name="text">
              <string/>
             </property>
@@ -235,22 +264,7 @@
          </widget>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_5">
-          <item>
-           <widget class="QComboBox" name="gps_dt_cb">
-            <property name="enabled">
-             <bool>false</bool>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QToolButton" name="gps_dt_tb">
-            <property name="text">
-             <string/>
-            </property>
-           </widget>
-          </item>
-         </layout>
+         <layout class="QHBoxLayout" name="horizontalLayout_5"/>
         </item>
         <item>
          <widget class="QLabel" name="label_9">
@@ -276,6 +290,16 @@
            </widget>
           </item>
          </layout>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>Выбрать столбцы с геометрией:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_6"/>
         </item>
         <item>
          <spacer name="verticalSpacer_4">
@@ -305,23 +329,12 @@
         <item>
          <widget class="QLabel" name="label_6">
           <property name="text">
-           <string>Выбрать столбцы,  которые НЕ сохраняем:</string>
+           <string>Выбрать столбцы,  которые сохраняем:</string>
           </property>
          </widget>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_7">
-          <item>
-           <widget class="QComboBox" name="ouf_cb"/>
-          </item>
-          <item>
-           <widget class="QToolButton" name="ouf_tb_2">
-            <property name="text">
-             <string/>
-            </property>
-           </widget>
-          </item>
-         </layout>
+         <layout class="QHBoxLayout" name="horizontalLayout_7"/>
         </item>
         <item>
          <spacer name="verticalSpacer_5">
@@ -435,14 +448,14 @@
      <item>
       <widget class="QPushButton" name="cancel_button">
        <property name="text">
-        <string>Cancel</string>
+        <string>Закрыть</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QPushButton" name="ok_button">
        <property name="text">
-        <string>OK</string>
+        <string>Выполнить</string>
        </property>
       </widget>
      </item>
